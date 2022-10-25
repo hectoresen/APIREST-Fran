@@ -13,7 +13,6 @@ import { DatabaseModule } from './database/database.module';
         '.prod.env', '.test.env', '.env'
       ]
     }),
-    }),
     DatabaseModule
   ],
   controllers: [AppController],
