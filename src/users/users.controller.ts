@@ -22,4 +22,4 @@ export class UsersController {
     const {id} = user.attributes()
     return this.usersService.getMyProfile(id)
   }
-};
+}

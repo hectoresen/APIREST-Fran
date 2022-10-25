@@ -5,7 +5,7 @@ import {
     CreateDateColumn,
     UpdateDateColumn,
     DeleteDateColumn
-} from "typeorm";
+} from "typeorm"
 
 export enum UserRoles {
     admin = 'admin',

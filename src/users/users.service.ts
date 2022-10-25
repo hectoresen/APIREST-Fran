@@ -10,9 +10,9 @@ export class UsersService {
 
   getMyProfile(id: string) {
     return {
-      userName: 'pepe',
+      userName: 'test',
       height: '102',
-      email: 'pepe@pepe.es',
+      email: 'pepe@test.es',
     }
   }
 }

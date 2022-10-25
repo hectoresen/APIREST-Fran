@@ -24,7 +24,6 @@ export default class User extends AggregateRoot {
 
     attributes(): UserAttributes {
         const {id, email, username, height, roles, avatar} = this
-
         return {
             id,
             email,
