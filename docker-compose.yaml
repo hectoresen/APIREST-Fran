@@ -12,15 +12,13 @@ services:
     ports:
       - ${POSTGRES_PORT}:5432
 
-  mongo:
-    image: mongo:5.0
-    restart: always
+  node:
+    container_name: apirest_node
+    build: docker/node
+    working_dir: /application
     env_file: .env
-    environment:
-      - MONGO_INITDB_ROOT_USERNAME=${DATABASE_USER}
-      - MONGO_INITDB_ROOT_PASSWORD=${DATABASE_PASSWORD}
-      - MONGO_INITDB_DATABASE=${DATABASE_NAME}
     ports:
-      - ${MONGO_PORT}:27017
+      - 3000:3000
     volumes:
-      - ./database/mongo/init-db.js:/docker-entrypoint-initdb.d/init-db.js:ro
+      - .:/application
+    command: "npm install && nest start --watch docker-compose up"
