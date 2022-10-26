@@ -7,8 +7,8 @@ Install
 ```bash
 2º. docker-compose up
 ```
-
-Possible version errors when launching webserver container
+Crear un módulo
+net g re (nombreClase)
 
 ```bash
 sudo rm -rf node_modules package-lock.json && npm install
