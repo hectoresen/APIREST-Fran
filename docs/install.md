@@ -1,4 +1,4 @@
-Instalación
+Install
 -------
 
 ```bash
@@ -6,4 +6,10 @@ Instalación
 ```
 ```bash
 2º. docker-compose up
+```
+
+Possible version errors when launching webserver container
+
+```bash
+sudo rm -rf node_modules package-lock.json && npm install
 ```
