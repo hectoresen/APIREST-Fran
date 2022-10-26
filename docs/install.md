@@ -7,3 +7,7 @@ Instalación
 ```bash
 2º. docker-compose up
 ```
+```
+Crear un módulo
+net g re (nombreClase)
+```
